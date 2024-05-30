@@ -40,9 +40,7 @@ export function Layout() {
                 </h1>
                 <p className="text-gray-500 md:text-xl dark:text-gray-400">Game Developer Producer</p>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  With over a decade of experience in the gaming industry, John Doe has produced some of the most
-                  successful and critically acclaimed titles. His passion for storytelling and player-centric design has
-                  earned him a reputation as a visionary in the field.
+                  게임 기획자 김진서입니다<div className=""></div>
                 </p>
               </div>
             </div>
@@ -61,7 +59,7 @@ export function Layout() {
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Past Projects</h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Explore a selection of John Doe's past game projects, showcasing his expertise in game development and
+              Explore a selection of John Doe&apos;s past game projects, showcasing his expertise in game development and
               production.
             </p>
           </div>
@@ -125,7 +123,7 @@ export function Layout() {
                   ideas to life.
                 </p>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  John's expertise spans a wide range of game genres, from open-world adventures to fast-paced action
+                  John&apos;s expertise spans a wide range of game genres, from open-world adventures to fast-paced action
                   games. He is passionate about storytelling, player-centric design, and pushing the boundaries of
                   what's possible in the medium of interactive entertainment.
                 </p>
