@@ -125,7 +125,7 @@ export function Layout() {
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   John&apos;s expertise spans a wide range of game genres, from open-world adventures to fast-paced action
                   games. He is passionate about storytelling, player-centric design, and pushing the boundaries of
-                  what's possible in the medium of interactive entertainment.
+                  what&apos;s possible in the medium of interactive entertainment.
                 </p>
               </div>
             </div>
