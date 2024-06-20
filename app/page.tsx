@@ -66,7 +66,7 @@ export default function Home() {
             <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg text-center">
               <div className="relative w-full h-[300px]">
                 <Image
-                  alt="Fantasy Realms Project"
+                  alt="AAAK"
                   className="rounded-md object-cover"
                   layout="fill"
                   src="/jump.jpg"
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg text-center">
               <div className="relative w-full h-[300px]">
                 <Image
-                  alt="Retro Arcade Blast Project"
+                  alt="Serious Game"
                   className="rounded-md object-cover"
                   layout="fill"
                   src="/serious.jpg"
