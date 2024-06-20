@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main className="flex flex-col gap-12 md:gap-20">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-100 dark:bg-gray-800">
         <div className="flex justify-center">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
@@ -16,22 +16,22 @@ export default function Home() {
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                     Jinseo Kim
-                  </h1><br></br>
-                  <p className="text-gray-500 md:text-xl dark:text-gray-400">
-                    Game Developer Producer
-                  </p>
+                  </h1>
+                  <br></br>
+                  <p className="text-gray-500 md:text-xl dark:text-gray-400"></p>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    게임 기획&디렉터 김진서입니다.
+                    팀 폭시(Team FOXI)의 게임 기획&디렉터 김진서입니다.
                   </p>
                 </div>
               </div>
-              <Image
-                alt="Jinseo Kim"
-                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                height="550"
-                src="/placeholder.svg"
-                width="550"
-              />
+              <div className="relative w-full h-[550px] lg:order-last">
+                <Image
+                  alt="Jinseo Kim"
+                  className="rounded-xl object-contain"
+                  layout="fill"
+                  src="/profile.jpg"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -40,53 +40,55 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Past Projects
-            </h2><br></br>
+              Projects
+            </h2>
+            <br></br>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              현재까지 진행했던 게임 프로젝트 쇼케이스
-            </p><br></br>
+              게임 프로젝트 쇼케이스
+            </p>
+            <br></br>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg">
-              <Image
-                alt="Project 1"
-                className="mb-4 aspect-[4/3] w-full rounded-md object-cover"
-                height="300"
-                src="/placeholder.svg"
-                width="400"
-              />
+            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg text-center">
+              <div className="relative w-full h-[300px]">
+                <Image
+                  alt="PaperTale Project"
+                  className="rounded-md object-cover"
+                  layout="fill"
+                  src="/papertale.jpg"
+                />
+              </div>
               <h3 className="text-lg font-semibold">페이퍼테일(PaperTale)</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                스와이프 조작으로 몰려오는 적들을 발리스타로 처치하는 모바일
-                디펜스 게임
+                스와이프 조작으로 몰려오는 적들을 처치하는 디펜스 게임
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg">
-              <Image
-                alt="Project 2"
-                className="mb-4 aspect-[4/3] w-full rounded-md object-cover"
-                height="300"
-                src="/placeholder.svg"
-                width="400"
-              />
-              <h3 className="text-lg font-semibold">Fantasy Realms</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg text-center">
+              <div className="relative w-full h-[300px]">
+                <Image
+                  alt="Fantasy Realms Project"
+                  className="rounded-md object-cover"
+                  layout="fill"
+                  src="/jump.jpg"
+                />
+              </div>
+              <h3 className="text-lg font-semibold">악!</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                A high-fantasy RPG that immerses players in a world of magic,
-                adventure, and epic storytelling.
+                플레이어의 목소리 크기를 인식하여 점프하는 플랫포머 게임
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg">
-              <Image
-                alt="Project 3"
-                className="mb-4 aspect-[4/3] w-full rounded-md object-cover"
-                height="300"
-                src="/placeholder.svg"
-                width="400"
-              />
-              <h3 className="text-lg font-semibold">Retro Arcade Blast</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-950 dark:hover:shadow-lg text-center">
+              <div className="relative w-full h-[300px]">
+                <Image
+                  alt="Retro Arcade Blast Project"
+                  className="rounded-md object-cover"
+                  layout="fill"
+                  src="/serious.jpg"
+                />
+              </div>
+              <h3 className="text-lg font-semibold">(미정)</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                A nostalgic arcade-style game that pays homage to the golden age
-                of gaming with its vibrant visuals and addictive gameplay.
+                60~70대 연령층을 위한 기능성 게임
               </p>
             </div>
           </div>
@@ -99,35 +101,30 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  About
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Experienced Game Developer and Producer
-                </h2><br></br>
+                </h2>
+                <br></br>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  게임 산업에서 12년 이상의 경험을 가진 김진서는 게임 개발,
-                  프로젝트 관리 및 크리에이티브 디렉팅 분야에서 그의 기술을
-                  연마했다. 그는 혁신적인 아이디어에 활기를 불어넣기 위해 재능
-                  있는 팀들과 긴밀히 협력하면서 성공적이고 비평가들의 호평을
-                  받은 타이틀을 제공한 검증된 실적을 가지고 있다.
-                </p><br></br>
+                  게임 산업에서 12년 이상의 경험을 가진 김진서는 게임 개발, 프로젝트 관리 및 크리에이티브 디렉팅 분야에서 그의 기술을 연마했다. 그는 혁신적인 아이디어에 활기를 불어넣기 위해 재능 있는 팀들과 긴밀히 협력하면서 성공적이고 비평가들의 호평을 받은 타이틀을 제공한 검증된 실적을 가지고 있다.
+                </p>
+                <br></br>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  게임 산업에서 12년 이상의 경험을 가진 김진서는 게임 개발,
-                  프로젝트 관리 및 크리에이티브 디렉팅 분야에서 그의 기술을
-                  연마했다. 그는 혁신적인 아이디어에 활기를 불어넣기 위해 재능
-                  있는 팀들과 긴밀히 협력하면서 성공적이고 비평가들의 호평을
-                  받은 타이틀을 제공한 검증된 실적을 가지고 있다.
-                </p><br></br>
+                  게임 산업에서 12년 이상의 경험을 가진 김진서는 게임 개발, 프로젝트 관리 및 크리에이티브 디렉팅 분야에서 그의 기술을 연마했다. 그는 혁신적인 아이디어에 활기를 불어넣기 위해 재능 있는 팀들과 긴밀히 협력하면서 성공적이고 비평가들의 호평을 받은 타이틀을 제공한 검증된 실적을 가지고 있다.
+                </p>
+                <br></br>
                 <p>by. Chat GPT</p>
               </div>
             </div>
-            <Image
-              alt="About"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              height="310"
-              src="/placeholder.svg"
-              width="550"
-            />
+            <div className="relative w-full h-[500px] lg:order-last">
+              <Image
+                alt="About Jinseo Kim"
+                className="rounded-xl object-contain"
+                layout="fill"
+                src="/crunch.jpg"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -145,10 +142,10 @@ export default function Home() {
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
               <form className="grid gap-4">
-                <input placeholder="Name" type="text" className="input-class border rounded p-2" />
-                <input placeholder="Email" type="email" className="input-class border rounded p-2" />
-                <textarea placeholder="Message" rows={4} className="textarea-class border rounded p-2"></textarea>
-                <button type="submit" className="button-class bg-blue-500 text-white rounded p-2">Send Message</button>
+                <Input placeholder="Name" type="text" />
+                <Input placeholder="Email" type="email" />
+                <Textarea placeholder="Message" rows={4} />
+                <Button type="submit">Send Message</Button>
               </form>
             </div>
           </div>
