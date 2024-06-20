@@ -69,10 +69,10 @@ export default function Home() {
                   alt="AAAK"
                   className="rounded-md object-cover"
                   layout="fill"
-                  src="/jump.jpg"
+                  src="/jump.JPG"
                 />
               </div>
-              <h3 className="text-lg font-semibold">악!</h3>
+              <h3 className="text-lg font-semibold">악!(AAAK)</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 플레이어의 목소리 크기를 인식해 점프하는 플랫포머 게임
               </p>
@@ -83,7 +83,7 @@ export default function Home() {
                   alt="Serious Game"
                   className="rounded-md object-cover"
                   layout="fill"
-                  src="/serious.jpg"
+                  src="/serious.JPG"
                 />
               </div>
               <h3 className="text-lg font-semibold">(미정)</h3>
