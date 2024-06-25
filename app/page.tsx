@@ -1,14 +1,42 @@
+"use client";
+
 import Image from "next/image";
-// import { Layout } from "@/components/component/layout";
+import { useRef } from "react";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const mainRef = useRef(null);
+  const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className="flex flex-col gap-12 md:gap-20">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-100 dark:bg-gray-800">
+      <header className="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-gray-800 shadow-md py-4">
+        <div className="container flex justify-end px-4 md:px-6 space-x-4">
+          <button onClick={() => scrollToSection(mainRef)} className="text-gray-700 dark:text-gray-300">
+            Main
+          </button>
+          <button onClick={() => scrollToSection(projectsRef)} className="text-gray-700 dark:text-gray-300">
+            Projects
+          </button>
+          <button onClick={() => scrollToSection(aboutRef)} className="text-gray-700 dark:text-gray-300">
+            About
+          </button>
+          <button onClick={() => scrollToSection(messageRef)} className="text-gray-700 dark:text-gray-300">
+            Message
+          </button>
+        </div>
+      </header>
+
+      <section ref={mainRef} className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-100 dark:bg-gray-800">
         <div className="flex justify-center">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
@@ -36,7 +64,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
+
+      <section ref={projectsRef} className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -95,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex justify-center">
+      <section ref={aboutRef} className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <div className="flex flex-col justify-center space-y-4">
@@ -111,7 +140,6 @@ export default function Home() {
                 </p>
                 <br></br>
                 
-            
                 <p>by. Chat GPT</p>
               </div>
             </div>
@@ -127,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
+      <section ref={messageRef} className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="grid items-center justify-center gap-4 text-center">
             <div className="space-y-3">
@@ -140,10 +168,10 @@ export default function Home() {
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
               <form className="grid gap-4">
-                <Input placeholder="Name" type="text" />
-                <Input placeholder="Email" type="email" />
-                <Textarea placeholder="Message" rows={4} />
-                <Button type="submit">Send Message</Button>
+                <Input placeholder="성명" type="text" />
+                <Input placeholder="이메일" type="email" />
+                <Textarea placeholder="내용" rows={4} />
+                <Button type="submit">제출</Button>
               </form>
             </div>
           </div>
