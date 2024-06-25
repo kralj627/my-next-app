@@ -22,7 +22,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-gray-800 shadow-md py-4">
         <div className="container flex justify-end px-4 md:px-6 space-x-4">
           <button onClick={() => scrollToSection(mainRef)} className="text-gray-700 dark:text-gray-300">
-            Main
+            Home
           </button>
           <button onClick={() => scrollToSection(projectsRef)} className="text-gray-700 dark:text-gray-300">
             Projects
@@ -31,7 +31,7 @@ export default function Home() {
             About
           </button>
           <button onClick={() => scrollToSection(messageRef)} className="text-gray-700 dark:text-gray-300">
-            Message
+            Contact
           </button>
         </div>
       </header>
